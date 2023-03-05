@@ -28,6 +28,7 @@ Contract Deploymenent
 
 Scroll:
 https://blockscout.scroll.io/address/0x75F0eE60D788efE564165a7Af2815aED15076182
+
 Base:
 https://goerli.basescan.org/address/0x432d05f94f837dbe65b998678737231837b681c0
 
