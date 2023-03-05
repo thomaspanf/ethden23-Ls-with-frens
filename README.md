@@ -35,10 +35,9 @@ https://goerli.basescan.org/address/0x432d05f94f837dbe65b998678737231837b681c0
 
 ## Running the Data Analysis
 
-API: Before running, copy `example.env` to `.env` and replace the value for ckey with your Covalent API key.
+Before running any of the Python Notebooks, copy `example.env` to `.env` and replace the value for ckey with your Covalent API key.
 
-
-Files:
+Python Notebooks:
  - `pnl1.ipynb`: using change in balance to determine buys/sells
  - `pnl2.ipynb`: using DEX swaps to determine buy/sells
  - `best_traders.ipynb`: getting PnLs of accounts given a pool
