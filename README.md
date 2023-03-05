@@ -14,25 +14,19 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Incorporated sponsors and tools
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+We used Wallet Connect for linking the Eth address associated to verify and sign permissions used later for calculating the
+PnL. We used Lens Protocol API for signing in and fetching the social graphs (aka frens) associated, this is achieved by
+running a graphQL query looking for id, address, and such. It then sorts by the highest loss after calculations are
+done through the python heavy PnL scripts. We also deployed an erc721 token that is awarded to the biggest Loser of the
+frens list. These are deployed on zk-based rollup Scroll & Coinbase L2 Base. We used covalent API to grab the previous transactional
+data of each of the valid addresses and push those into a time series database. We used Infura inconjunction with Lens to retrieve
+IPFS stored data.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Contract Deploymenent
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Scroll:
+https://blockscout.scroll.io/address/0x75F0eE60D788efE564165a7Af2815aED15076182
+Base:
+https://goerli.basescan.org/address/0x432d05f94f837dbe65b998678737231837b681c0
