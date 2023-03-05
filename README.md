@@ -30,3 +30,14 @@ Scroll:
 https://blockscout.scroll.io/address/0x75F0eE60D788efE564165a7Af2815aED15076182
 Base:
 https://goerli.basescan.org/address/0x432d05f94f837dbe65b998678737231837b681c0
+
+
+## Running the Data Analysis
+
+API: Before running, copy `example.env` to `.env` and replace the value for ckey with your Covalent API key.
+
+
+Files:
+ - `pnl1.ipynb`: using change in balance to determine buys/sells
+ - `pnl2.ipynb`: using DEX swaps to determine buy/sells
+ - `best_traders.ipynb`: getting PnLs of accounts given a pool
